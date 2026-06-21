@@ -3,8 +3,23 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Monte Sinai Mexican Market &amp; Pampano's Café · Victor, Idaho</title>
-<meta name="description" content="A Mexican market and café in Victor, Idaho — fresh pan dulce, groceries, and Pampano's coffee. Open every day 7:30am–8pm." />
+<title>Monte Sinai Mexican Market &amp; Pampano's Cafe · Victor, Idaho</title>
+<meta name="description" content="A Mexican market and café in Victor, Idaho — fresh pan dulce, groceries, and Pampano's coffee. Open every day 7am–9:30pm." />
+<meta name="theme-color" content="#0a2356" />
+<meta name="robots" content="noindex, nofollow" /><!-- LAUNCH GATE: delete this line on payment day to allow Google to list the site -->
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Monte Sinai Mexican Market &amp; Pampano's Cafe" />
+<meta property="og:description" content="A Mexican market and café in Victor, Idaho — fresh pan dulce, groceries, warm Latin plates, and a full coffee bar." />
+<meta property="og:image" content="https://lucienjaba.github.io/monte-sinai/images/og-image.jpg" />
+<meta property="og:url" content="https://lucienjaba.github.io/monte-sinai/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:locale:alternate" content="es_MX" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Monte Sinai Mexican Market &amp; Pampano's Cafe" />
+<meta name="twitter:description" content="A Mexican market and café in Victor, Idaho — fresh pan dulce, groceries, warm Latin plates, and a full coffee bar." />
+<meta name="twitter:image" content="https://lucienjaba.github.io/monte-sinai/images/og-image.jpg" />
 <script>document.documentElement.className="js"</script>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -47,7 +62,7 @@
   .brand .seal{width:26px;height:26px;flex:none}
   .nav-right{display:flex;align-items:center;gap:26px}
   .nav-links{display:flex;gap:26px;align-items:center}
-  .nav-links a{color:rgba(247,241,230,.85);text-decoration:none;font-size:.92rem;font-weight:600;transition:color .25s}
+  .nav-links a{color:rgba(247,241,230,.96);text-decoration:none;font-size:.92rem;font-weight:600;transition:color .25s}
   nav.solid .nav-links a{color:var(--ink-soft)}
   .nav-links a:hover{color:var(--marigold)}
   .nav-call{display:inline-flex;align-items:center;gap:8px;background:var(--marigold);color:var(--blue-950);font-weight:700;font-size:.9rem;padding:10px 18px;border-radius:100px;text-decoration:none;transition:transform .2s,box-shadow .2s}
@@ -182,6 +197,32 @@
   .cafe-photo .cap{position:relative;z-index:2;font-family:var(--display);font-size:1.18rem}
   .soon{display:inline-flex;align-items:center;gap:10px;background:rgba(0,0,0,.25);border:1px solid rgba(231,199,154,.35);padding:12px 22px;border-radius:100px;font-weight:700;font-size:.85rem;color:var(--paper);align-self:flex-start}
   .soon .pulse{width:9px;height:9px;border-radius:50%;background:var(--lime);animation:pulse 2s infinite}
+  .cafe-hero{max-width:620px;margin:0 auto 34px;border-radius:22px;overflow:hidden;box-shadow:var(--shadow);position:relative}
+  .cafe-hero img,.cafe-hero video{display:block;width:100%;height:auto}
+  .cafe-hero figcaption{position:absolute;left:0;right:0;bottom:0;padding:48px 24px 20px;background:linear-gradient(transparent,rgba(28,17,8,.86));color:var(--paper);font-family:var(--display);font-size:clamp(1.05rem,2.3vw,1.4rem);line-height:1.3}
+  .menu-full,.drinks-card{margin-bottom:30px}
+  .menu-board{display:grid;grid-template-columns:repeat(3,1fr);gap:30px 44px;margin-top:8px}
+  .menu-cat h4{font-family:var(--display);font-style:italic;font-size:1.28rem;color:var(--blue-800);margin-bottom:1px}
+  .menu-cat .cat-sub{display:block;font-size:.67rem;text-transform:uppercase;letter-spacing:.09em;color:var(--terracotta);font-weight:700;margin-bottom:16px}
+  .dishes{list-style:none;display:flex;flex-direction:column;gap:16px}
+  .dish-row{display:flex;align-items:baseline;gap:7px}
+  .dish-row .d-name{font-weight:600;font-size:.98rem}
+  .dish-row .d-dots{flex:1;border-bottom:1.5px dotted rgba(42,26,14,.26);transform:translateY(-3px)}
+  .dish-row .d-price{font-weight:700;color:var(--blue-800);font-size:.95rem;white-space:nowrap}
+  .d-desc{font-size:.8rem;line-height:1.45;color:var(--ink-soft);margin-top:3px}
+  .d-add{display:block;font-size:.74rem;font-style:italic;color:var(--terracotta);margin-top:3px}
+  .drinks-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px 30px;margin-top:8px}
+  .drink-group h5{font-family:var(--display);font-style:italic;font-size:1.1rem;color:var(--blue-800);margin-bottom:10px;border-bottom:1.5px dotted rgba(42,26,14,.26);padding-bottom:6px}
+  .drink-group ul{list-style:none;display:flex;flex-direction:column;gap:8px}
+  .drink-group li{display:flex;justify-content:space-between;gap:10px;font-size:.9rem;font-weight:500;line-height:1.2}
+  .drink-group li b{color:var(--blue-800);font-weight:700;white-space:nowrap}
+  .cafe-photos{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:4px}
+  .cafe-photos .cafe-photo{min-height:210px}
+  .drink-photos{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:26px}
+  .drink-photos .cafe-photo{min-height:380px}
+  .drink-photos .cafe-photo img{object-position:center 30%}
+  @media(max-width:860px){.menu-board{grid-template-columns:1fr 1fr;gap:26px 34px}.drinks-grid{grid-template-columns:repeat(2,1fr)}.cafe-photos{grid-template-columns:1fr 1fr}}
+  @media(max-width:540px){.menu-board{grid-template-columns:1fr}.drinks-grid{grid-template-columns:1fr}.cafe-photos{grid-template-columns:1fr}.drink-photos{grid-template-columns:1fr}}
   @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(134,184,23,.6)}70%{box-shadow:0 0 0 12px rgba(134,184,23,0)}100%{box-shadow:0 0 0 0 rgba(134,184,23,0)}}
   @media(max-width:820px){.cafe-grid{grid-template-columns:1fr;gap:24px}.menu-cols{gap:22px}}
 
@@ -264,13 +305,13 @@
     <div class="wrap hero-inner">
       <span class="kicker hero-anim"><span class="ln"></span><span data-en="Mexican Market &amp; Café · Victor, Idaho" data-es="Mercado Mexicano y Café · Victor, Idaho">Mexican Market &amp; Café · Victor, Idaho</span></span>
       <h1 class="hero-anim"><span data-en="A little piece" data-es="Un pedacito">A little piece</span><br><span class="l2" data-en="of México" data-es="de México">of México</span></h1>
-      <p class="lede hero-anim" data-en="Step into <b>Monte Sinai</b> — fresh pan dulce, Mexican groceries, and the warmth of home. And right next door, <b>Pampano's</b> has the coffee on." data-es="Entra a <b>Monte Sinai</b> — pan dulce fresco, abarrotes mexicanos y el calor de casa. Y al lado, <b>Pampano's</b> te espera con el café.">Step into <b>Monte Sinai</b> — fresh pan dulce, Mexican groceries, and the warmth of home. And right next door, <b>Pampano's</b> has the coffee on.</p>
+      <p class="lede hero-anim" data-en="Step into <b>Monte Sinai Mexican Market</b> — fresh pan dulce, Mexican groceries, and the warmth of home. And right next door, <b>Pampano's Cafe</b> has the coffee on." data-es="Entra al <b>Mercado Monte Sinai</b> — pan dulce fresco, abarrotes mexicanos y el calor de casa. Y al lado, <b>Pampano's Cafe</b> te espera con el café.">Step into <b>Monte Sinai Mexican Market</b> — fresh pan dulce, Mexican groceries, and the warmth of home. And right next door, <b>Pampano's Cafe</b> has the coffee on.</p>
       <div class="cta-row hero-anim">
         <a href="#mercado" class="btn btn-primary" data-en="See the market" data-es="Ver el mercado">See the market</a>
         <a href="#pompano" class="btn btn-ghost" data-en="Meet Pampano's" data-es="Conocer Pampano's">Meet Pampano's</a>
       </div>
       <div class="hero-meta hero-anim">
-        <span data-en="Open <b>every day</b> · 7:30am–8pm" data-es="Abierto <b>todos los días</b> · 7:30am–8pm">Open <b>every day</b> · 7:30am–8pm</span>
+        <span data-en="Open <b>every day</b> · 7am–9:30pm" data-es="Abierto <b>todos los días</b> · 7am–9:30pm">Open <b>every day</b> · 7am–9:30pm</span>
         <span data-en="<b>216</b> S. Main St, Victor" data-es="<b>216</b> S. Main St, Victor">216 S. Main St, Victor</span>
       </div>
     </div>
@@ -279,7 +320,7 @@
 
   <!-- STOREFRONT -->
   <section class="storefront">
-    <img src="images/mount-sinai/monte-sinai-storefront-both.jpg" alt="Monte Sinai Mexican Market and Pampano's Café storefront in Victor, Idaho" loading="lazy">
+    <img src="images/mount-sinai/monte-sinai-storefront-both.jpg" alt="Monte Sinai Mexican Market and Pampano's Cafe storefront in Victor, Idaho" loading="lazy">
     <div class="cap"><div class="inner reveal">
       <div class="t" data-en="Two doors, one corner of México." data-es="Dos puertas, una esquina de México.">Two doors, one corner of México.</div>
       <div class="sub" data-en="The market and the café, side by side on Main Street. <b>Open 7 days.</b>" data-es="El mercado y el café, lado a lado en Main Street. <b>Abierto los 7 días.</b>">The market and the café, side by side on Main Street. <b>Open 7 days.</b></div>
@@ -347,38 +388,173 @@
     <div class="picado" aria-hidden="true"><span class="flag"></span><span class="flag"></span><span class="flag"></span><span class="flag"></span><span class="flag"></span><span class="flag"></span><span class="flag"></span><span class="flag"></span><span class="flag"></span><span class="flag"></span><span class="flag"></span><span class="flag"></span><span class="flag"></span><span class="flag"></span><span class="flag"></span><span class="flag"></span><span class="flag"></span><span class="flag"></span></div>
     <div class="wrap">
       <div class="head-c reveal">
-        <h2><svg viewBox="0 0 48 40" fill="none" aria-hidden="true"><path d="M8 12h26v12a8 8 0 01-8 8H16a8 8 0 01-8-8z" fill="currentColor"/><path d="M34 15h4a5 5 0 010 10h-4" stroke="currentColor" stroke-width="3" fill="none"/></svg>Pampano's</h2>
+        <h2><svg viewBox="0 0 48 40" fill="none" aria-hidden="true"><path d="M8 12h26v12a8 8 0 01-8 8H16a8 8 0 01-8-8z" fill="currentColor"/><path d="M34 15h4a5 5 0 010 10h-4" stroke="currentColor" stroke-width="3" fill="none"/></svg>Pampano's Cafe</h2>
         <div class="tagline" data-en="Coffee, comfort &amp; Latin plates" data-es="Café, sazón y platos latinos">Coffee, comfort &amp; Latin plates</div>
-        <p class="desc" data-en="The café right beside the market — espresso and lattes, croissant sandwiches, and warm plates. We're plating the full menu now." data-es="El café justo al lado del mercado — espresso y lattes, sándwiches en croissant y platos calientes. Estamos preparando el menú completo.">The café right beside the market — espresso and lattes, croissant sandwiches, and warm plates. We're plating the full menu now.</p>
+        <p class="desc" data-en="The café right beside the market — a full coffee bar, breakfast all day, and warm Latin plates. Here's the menu." data-es="El café justo al lado del mercado — barra de café completa, desayuno todo el día y platos latinos. Aquí está el menú.">The café right beside the market — a full coffee bar, breakfast all day, and warm Latin plates. Here's the menu.</p>
       </div>
-      <div class="cafe-grid">
-        <div class="menu-card reveal">
-          <span class="ribbon-tag" data-en="Menu preview" data-es="Avance del menú">Menu preview</span>
-          <h3>Pampano's</h3>
-          <div class="ms" data-en="A taste of what's coming" data-es="Un adelanto de lo que viene">A taste of what's coming</div>
-          <div class="menu-cols">
-            <div class="menu-col">
-              <h4 data-en="To drink" data-es="Para tomar">To drink</h4>
-              <ul>
-                <li>Café con leche</li><li>Cortadito</li><li>Latte &amp; espresso</li>
-                <li>Horchata<small data-en="House-made" data-es="De la casa">House-made</small></li>
-              </ul>
-            </div>
-            <div class="menu-col">
-              <h4 data-en="To eat" data-es="Para comer">To eat</h4>
-              <ul>
-                <li data-en="Croissant sandwiches" data-es="Sándwiches en croissant">Croissant sandwiches</li>
-                <li>Empanadas</li><li>Tostadas</li>
-                <li>Tres leches<small data-en="House dessert" data-es="Postre de la casa">House dessert</small></li>
-              </ul>
-            </div>
+      <figure class="cafe-hero reveal">
+        <video class="cafe-hero-vid" autoplay muted loop playsinline preload="metadata" width="720" height="1280" poster="images/pompanos/pompanos-menu-spread.jpg" aria-label="A slow pan across a table at Pampano's Cafe — chilaquiles, tacos, and lattes">
+          <source src="images/pompanos/pompanos-table.mp4" type="video/mp4">
+          <img src="images/pompanos/pompanos-menu-spread.jpg" alt="A table at Pampano's Cafe — two chilaquiles plates, a platter of asada and pastor tacos, a matcha latte and a horchata latte">
+        </video>
+        <figcaption data-en="Chilaquiles, tacos al pastor &amp; asada, and the coffee bar" data-es="Chilaquiles, tacos al pastor y asada, y la barra de café">Chilaquiles, tacos al pastor &amp; asada, and the coffee bar</figcaption>
+      </figure>
+      <div class="menu-card menu-full reveal">
+        <span class="ribbon-tag" data-en="The menu" data-es="El menú">The menu</span>
+        <h3>Pampano's Cafe</h3>
+        <div class="ms" data-en="Breakfast all day · Latin plates · Coffee bar" data-es="Desayuno todo el día · Platos latinos · Barra de café">Breakfast all day · Latin plates · Coffee bar</div>
+        <div class="menu-board">
+          <section class="menu-cat">
+            <h4 data-en="Breakfast" data-es="Desayuno">Breakfast</h4>
+            <span class="cat-sub" data-en="Sandwiches &amp; Burritos" data-es="Tortas y Burritos">Sandwiches &amp; Burritos</span>
+            <ul class="dishes">
+              <li>
+                <div class="dish-row"><span class="d-name">Torta de Tamal</span><span class="d-dots"></span><span class="d-price">$10</span></div>
+                <p class="d-desc" data-en="Red or green sauce, queso fresco &amp; cream." data-es="Salsa roja o verde, queso fresco y crema.">Red or green sauce, queso fresco &amp; cream.</p>
+              </li>
+              <li>
+                <div class="dish-row"><span class="d-name">Chilaquiles Eggs Torta</span><span class="d-dots"></span><span class="d-price">$12</span></div>
+                <p class="d-desc" data-en="Red or green, onion, queso fresco &amp; cream." data-es="Roja o verde, cebolla, queso fresco y crema.">Red or green, onion, queso fresco &amp; cream.</p>
+              </li>
+              <li>
+                <div class="dish-row"><span class="d-name">Telera Panini</span><span class="d-dots"></span><span class="d-price">$11</span></div>
+                <p class="d-desc" data-en="Bacon or ham, mayo, arugula, tomato, eggs &amp; cheese." data-es="Tocino o jamón, mayo, arúgula, tomate, huevo y queso.">Bacon or ham, mayo, arugula, tomato, eggs &amp; cheese.</p>
+              </li>
+              <li>
+                <div class="dish-row"><span class="d-name">Pampano's Burrito</span><span class="d-dots"></span><span class="d-price">$11</span></div>
+                <p class="d-desc" data-en="Veggies or chorizo, potato, onion, jalapeño &amp; cheese." data-es="Vegetales o chorizo, papa, cebolla, jalapeño y queso.">Veggies or chorizo, potato, onion, jalapeño &amp; cheese.</p>
+              </li>
+            </ul>
+          </section>
+          <section class="menu-cat">
+            <h4 data-en="Plates" data-es="Platos">Plates</h4>
+            <span class="cat-sub" data-en="Served all day" data-es="Todo el día">Served all day</span>
+            <ul class="dishes">
+              <li>
+                <div class="dish-row"><span class="d-name">Pampano's Traditional</span><span class="d-dots"></span><span class="d-price">$12</span></div>
+                <p class="d-desc" data-en="Bacon or ham, two eggs any style, hash browns &amp; toast." data-es="Tocino o jamón, dos huevos al gusto, papas y pan tostado.">Bacon or ham, two eggs any style, hash browns &amp; toast.</p>
+              </li>
+              <li>
+                <div class="dish-row"><span class="d-name">Huevos Rancheros</span><span class="d-dots"></span><span class="d-price">$16</span></div>
+                <p class="d-desc"><span data-en="Green Anaheim sauce, refried beans, pico de gallo, queso fresco &amp; avocado." data-es="Salsa de chile Anaheim, frijoles, pico de gallo, queso fresco y aguacate.">Green Anaheim sauce, refried beans, pico de gallo, queso fresco &amp; avocado.</span><span class="d-add" data-en="+ bacon or chorizo $3" data-es="+ tocino o chorizo $3">+ bacon or chorizo $3</span></p>
+              </li>
+              <li>
+                <div class="dish-row"><span class="d-name">Chilaquiles</span><span class="d-dots"></span><span class="d-price">$16</span></div>
+                <p class="d-desc"><span data-en="Red or green, two eggs any style, refried beans, queso fresco, onion &amp; cream." data-es="Roja o verde, dos huevos al gusto, frijoles, queso fresco, cebolla y crema.">Red or green, two eggs any style, refried beans, queso fresco, onion &amp; cream.</span><span class="d-add" data-en="+ carne asada $3" data-es="+ carne asada $3">+ carne asada $3</span></p>
+              </li>
+              <li>
+                <div class="dish-row"><span class="d-name">French Toast</span><span class="d-dots"></span><span class="d-price">$16</span></div>
+                <p class="d-desc" data-en="Banana rum butter &amp; mascarpone." data-es="Mantequilla de plátano al ron y mascarpone.">Banana rum butter &amp; mascarpone.</p>
+              </li>
+            </ul>
+          </section>
+          <section class="menu-cat">
+            <h4 data-en="Lunch" data-es="Comida">Lunch</h4>
+            <span class="cat-sub" data-en="Sandwiches &amp; Burgers" data-es="Sándwiches y Hamburguesas">Sandwiches &amp; Burgers</span>
+            <ul class="dishes">
+              <li>
+                <div class="dish-row"><span class="d-name">Caprese Pesto Panini</span><span class="d-dots"></span><span class="d-price">$16</span></div>
+                <p class="d-desc" data-en="Ham &amp; fresh mozzarella." data-es="Jamón y mozzarella fresco.">Ham &amp; fresh mozzarella.</p>
+              </li>
+              <li>
+                <div class="dish-row"><span class="d-name">Philly Cheesesteak</span><span class="d-dots"></span><span class="d-price">$17</span></div>
+                <p class="d-desc" data-en="Mixed peppers, onion, mayo &amp; cheese." data-es="Pimientos, cebolla, mayo y queso.">Mixed peppers, onion, mayo &amp; cheese.</p>
+              </li>
+              <li>
+                <div class="dish-row"><span class="d-name">Pampano's Double Cheeseburger</span><span class="d-dots"></span><span class="d-price">$17</span></div>
+              </li>
+              <li>
+                <div class="dish-row"><span class="d-name">Double BBQ Bacon Cheeseburger</span><span class="d-dots"></span><span class="d-price">$18</span></div>
+              </li>
+              <li>
+                <div class="dish-row"><span class="d-name">Tacos</span><span class="d-dots"></span><span class="d-price">$3.50</span></div>
+                <p class="d-desc" data-en="Asada, pastor, carnitas, lengua, cabeza, pollo or tripa — each." data-es="Asada, pastor, carnitas, lengua, cabeza, pollo o tripa — c/u.">Asada, pastor, carnitas, lengua, cabeza, pollo or tripa — each.</p>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+      <div class="menu-card drinks-card reveal">
+        <span class="ribbon-tag" data-en="Coffee bar &amp; drinks" data-es="Café y bebidas">Coffee bar &amp; drinks</span>
+        <h3 data-en="Drinks" data-es="Bebidas">Drinks</h3>
+        <div class="ms" data-en="Lattes, frappés, juices, shakes &amp; more" data-es="Lattes, frappés, jugos, malteadas y más">Lattes, frappés, juices, shakes &amp; more</div>
+        <div class="drinks-grid">
+          <div class="drink-group">
+            <h5>Lattes</h5>
+            <ul>
+              <li><span data-en="Coffee" data-es="Café">Coffee</span><b>$3.50</b></li>
+              <li><span>Mocha</span><b>$7</b></li>
+              <li><span>Chai</span><b>$7</b></li>
+              <li><span>Matcha</span><b>$8</b></li>
+              <li><span>Caramelo</span><b>$7</b></li>
+            </ul>
+          </div>
+          <div class="drink-group">
+            <h5>Frappés</h5>
+            <ul>
+              <li><span>Kinder Delice</span><b>$9</b></li>
+              <li><span>Oreo</span><b>$9</b></li>
+              <li><span data-en="Vanilla" data-es="Vainilla">Vanilla</span><b>$8</b></li>
+              <li><span data-en="Strawberry" data-es="Fresa">Strawberry</span><b>$8</b></li>
+            </ul>
+          </div>
+          <div class="drink-group">
+            <h5 data-en="Milkshakes" data-es="Malteadas">Milkshakes</h5>
+            <ul>
+              <li><span data-en="Vanilla" data-es="Vainilla">Vanilla</span><b>$8</b></li>
+              <li><span data-en="Strawberry" data-es="Fresa">Strawberry</span><b>$8</b></li>
+              <li><span data-en="Caramel" data-es="Caramelo">Caramel</span><b>$8</b></li>
+              <li><span>Chocolate</span><b>$8</b></li>
+            </ul>
+          </div>
+          <div class="drink-group">
+            <h5>Smoothies</h5>
+            <ul>
+              <li><span data-en="Banana" data-es="Plátano">Banana</span><b>$8</b></li>
+              <li><span data-en="Strawberry" data-es="Fresa">Strawberry</span><b>$8</b></li>
+              <li><span>Mango</span><b>$8</b></li>
+              <li><span data-en="Blueberry" data-es="Mora azul">Blueberry</span><b>$8</b></li>
+            </ul>
+          </div>
+          <div class="drink-group">
+            <h5 data-en="Juices" data-es="Jugos">Juices</h5>
+            <ul>
+              <li><span data-en="Fresh Orange" data-es="Naranja fresca">Fresh Orange</span><b>$6</b></li>
+              <li><span data-en="Apple" data-es="Manzana">Apple</span><b>$4</b></li>
+              <li><span data-en="Lemonade" data-es="Limonada">Lemonade</span><b>$4</b></li>
+            </ul>
+          </div>
+          <div class="drink-group">
+            <h5 data-en="Sodas" data-es="Refrescos">Sodas</h5>
+            <ul>
+              <li><span>Coca-Cola</span><b>$3.50</b></li>
+              <li><span>Fanta</span><b>$3.50</b></li>
+              <li><span>Sprite</span><b>$3.50</b></li>
+              <li><span data-en="Italian Soda" data-es="Soda Italiana">Italian Soda</span><b>$6</b></li>
+            </ul>
+          </div>
+          <div class="drink-group">
+            <h5 data-en="Beer &amp; Mimosas" data-es="Cervezas y Mimosas">Beer &amp; Mimosas</h5>
+            <ul>
+              <li><span>Mimosa</span><b>$6</b></li>
+              <li><span>King Michelada</span><b>$15</b></li>
+              <li><span>Corona</span><b>$5</b></li>
+              <li><span>Pacífico</span><b>$5</b></li>
+              <li><span>Victoria</span><b>$5</b></li>
+              <li><span>Modelo Especial</span><b>$5</b></li>
+            </ul>
           </div>
         </div>
-        <div class="cafe-feel">
-          <div class="cafe-photo reveal"><img src="images/pompanos/pompanos-01-counter.jpg" alt="The barista at Pampano's espresso bar, Order Here sign above" loading="lazy"><div class="cap" data-en="Order here" data-es="Ordena aquí">Order here</div></div>
-          <div class="cafe-photo reveal"><img src="images/pompanos/pompanos-02-seating.jpg" alt="Café seating area at Pampano's" loading="lazy"><div class="cap" data-en="Pull up a chair" data-es="Siéntate un rato">Pull up a chair</div></div>
-          <div class="soon reveal"><span class="pulse"></span><span data-en="Full menu coming soon" data-es="Menú completo próximamente">Full menu coming soon</span></div>
+        <div class="drink-photos">
+          <div class="cafe-photo"><img src="images/pompanos/pompanos-matcha.jpg" alt="A matcha latte in a glass mug at Pampano's Cafe" loading="lazy"><div class="cap" data-en="Matcha latte" data-es="Latte de matcha">Matcha latte</div></div>
+          <div class="cafe-photo"><img src="images/pompanos/pompanos-horchata.jpg" alt="A cinnamon-dusted latte in a glass mug at Pampano's Cafe" loading="lazy"><div class="cap" data-en="Cinnamon latte" data-es="Latte con canela">Cinnamon latte</div></div>
         </div>
+      </div>
+      <div class="cafe-photos reveal">
+        <div class="cafe-photo"><img src="images/pompanos/pompanos-chilaquiles.jpg" alt="A chilaquiles plate at Pampano's with fried eggs, refried beans and bolillo bread" loading="lazy"><div class="cap" data-en="Chilaquiles" data-es="Chilaquiles">Chilaquiles</div></div>
+        <div class="cafe-photo"><img src="images/pompanos/pompanos-tacos.jpg" alt="A platter of asada and pastor tacos with radish, lime and cilantro at Pampano's Cafe" loading="lazy"><div class="cap" data-en="Tacos — asada &amp; pastor" data-es="Tacos — asada y pastor">Tacos — asada &amp; pastor</div></div>
+        <div class="cafe-photo"><img src="images/pompanos/pompanos-01-counter.jpg" alt="The barista at Pampano's espresso bar, Order Here sign above" loading="lazy"><div class="cap" data-en="Order here" data-es="Ordena aquí">Order here</div></div>
+        <div class="cafe-photo"><img src="images/pompanos/pompanos-02-seating.jpg" alt="Café seating area at Pampano's" loading="lazy"><div class="cap" data-en="Pull up a chair" data-es="Siéntate un rato">Pull up a chair</div></div>
       </div>
     </div>
   </section>
@@ -395,12 +571,12 @@
         </div>
         <div class="info reveal">
           <div class="row"><div class="k" data-en="Where" data-es="Dónde">Where</div><div class="v"><a href="https://maps.google.com/?q=216+S+Main+St,+Victor,+ID+83455" target="_blank" rel="noopener">216 S. Main St</a><small>Victor, Idaho 83455</small></div></div>
-          <div class="row"><div class="k" data-en="Hours" data-es="Horario">Hours</div><div class="v" data-en="Every day · 7:30am – 8:00pm" data-es="Todos los días · 7:30am – 8:00pm">Every day · 7:30am – 8:00pm<small data-en="Open 7 days a week" data-es="Abierto los 7 días">Open 7 days a week</small></div></div>
+          <div class="row"><div class="k" data-en="Hours" data-es="Horario">Hours</div><div class="v" data-en="Every day · 7am – 9:30pm" data-es="Todos los días · 7am – 9:30pm">Every day · 7am – 9:30pm<small data-en="Open 7 days a week" data-es="Abierto los 7 días">Open 7 days a week</small></div></div>
           <div class="row"><div class="k" data-en="Call" data-es="Llámanos">Call</div><div class="v"><a href="tel:+12087871378">(208) 787-1378</a></div></div>
         </div>
       </div>
       <footer>
-        <div class="brand"><svg class="seal" viewBox="0 0 40 40" fill="none" aria-hidden="true" style="width:22px;height:22px"><circle cx="20" cy="20" r="19" fill="#0e2f76" stroke="#f6a623" stroke-width="2"/><path d="M8 26l7-11 5 7 4-5 8 9z" fill="#fff"/></svg> Monte&nbsp;Sinai &amp; Pampano's</div>
+        <div class="brand"><svg class="seal" viewBox="0 0 40 40" fill="none" aria-hidden="true" style="width:22px;height:22px"><circle cx="20" cy="20" r="19" fill="#0e2f76" stroke="#f6a623" stroke-width="2"/><path d="M8 26l7-11 5 7 4-5 8 9z" fill="#fff"/></svg> Monte&nbsp;Sinai &amp; Pampano's Cafe</div>
         <div class="made" data-en="Made with <em>cariño</em> in Victor, Idaho" data-es="Hecho con <em>cariño</em> en Victor, Idaho">Made with <em>cariño</em> in Victor, Idaho</div>
       </footer>
     </div>
@@ -426,6 +602,10 @@
   // scroll reveals (enhancement; content is visible by default without JS)
   const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.15});
   document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transitionDelay=(Math.min(i%6,5)*70)+'ms';io.observe(el)});
+  // Respect reduced-motion: don't autoplay the café video
+  if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches){
+    document.querySelectorAll('video[autoplay]').forEach(v=>{v.removeAttribute('autoplay');try{v.pause()}catch(e){}});
+  }
 </script>
 </body>
 </html>
